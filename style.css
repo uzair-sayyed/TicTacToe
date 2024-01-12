@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  /* overflow-y: hidden; */
+  background: linear-gradient(
+    0deg,
+    rgba(135, 52, 170, 1) 0%,
+    rgba(19, 124, 179, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* overflow-y: hidden; */
+}
+
+.game-container {
+  width: 60vw;
+  margin: 70px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.game-container h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game {
+  height: 470px;
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.game .btn {
+  width: 150px;
+  height: 150px;
+  outline: 0;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 100px;
+  font-weight: 600;
+  color: rgb(76, 74, 77);
+  background-color: #e7e7e7;
+}
+
+.game .btn:hover {
+  background-color: white;
+}
+
+.reset {
+  margin: 20px 0 0 0;
+  padding: 7px 10px;
+  outline: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: rgb(76, 74, 77);
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: white;
+}
+
+#new-btn {
+  margin: 40px 0 0 0;
+  padding: 7px 10px;
+  outline: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: rgb(76, 74, 77);
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+#new-btn:hover {
+  background-color: white;
+}
+
+.msg-container {
+  overflow-y: hidden;
+  margin: 10% auto;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+#msg {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+@media (width < 546px) {
+  .game {
+    height: 260px;
+    width: 260px;
+  }
+  .game .btn {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .game-container h1 {
+    margin-bottom: 50px;
+    font-size: 24px;
+  }
+  .reset {
+    margin: 30px 0 0 0;
+    padding: 5px 8px;
+    font-size: 18px;
+  }
+  #new-btn {
+    margin: 30px 0 0 0;
+    padding: 5px 8px;
+    font-size: 18px;
+  }
+  .msg-container {
+    overflow-y: hidden;
+    /* margin: 10% auto; */
+    margin-top: 150px;
+    text-align: center;
+  }
+}
